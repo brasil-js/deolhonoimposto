@@ -3,7 +3,7 @@ Cliente para a API Rest do serviço gratuito [DeOlhoNoImposto](deolhonoimposto.i
 
 ### Instalação
 
-``bash
+```bash
 npm install --save deolhonoimposto
 ```
 
