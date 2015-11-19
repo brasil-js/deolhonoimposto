@@ -1,0 +1,30 @@
+{
+  "name": "deolhonoimposto",
+  "version": "1.0.0",
+  "description": "Cliente para a API Rest do serviço gratuito DeOlhoNoImposto",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brasil-js/deolhonoimposto.git"
+  },
+  "keywords": [
+    "imposto",
+    "ibpt",
+    "deolhonoimposto",
+    "brasil",
+    "gammasoft"
+  ],
+  "author": "Renato Gama <renato@gammasoft.com.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brasil-js/deolhonoimposto/issues"
+  },
+  "homepage": "https://github.com/brasil-js/deolhonoimposto",
+  "dependencies": {
+    "async": "^1.5.0",
+    "request": "^2.67.0"
+  }
+}
