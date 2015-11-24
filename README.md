@@ -15,7 +15,8 @@ var deolhonoimposto = require('deolhonoimposto');
 var cliente = new deolhonoimposto.Cliente({
     token: 'seuToken',
     cnpj: 'seuCnpj',
-    uf: 'df'
+    uf: 'df',
+    timeout: 10000 // Opcional, por padrão o timeout é 5 segundos
 });
 
 cliente.consultar({

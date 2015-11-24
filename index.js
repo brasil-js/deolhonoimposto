@@ -6,6 +6,7 @@ module.exports.Cliente = function(opcoes) {
   this.consultar = function(parametros, callback) {
     request({
       method: 'GET',
+      timeout: parametros.timeout || opcoes.timeout || 5000,
       url: [
         'http://iws.ibpt.org.br/api/deolhonoimposto',
         parametros.tipo
