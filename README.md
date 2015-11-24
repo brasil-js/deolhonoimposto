@@ -21,7 +21,7 @@ var cliente = new deolhonoimposto.Cliente({
 cliente.consultar({
     tipo: 'servico', // ou 'produto'
     codigo: '01.05',  // NCM, NBS ou LC116
-    ex: 0 // É possível passar parâmetro de exceção (veja abaixo)*
+    ex: 0 // Parâmetro de exceção ao NCM (veja abaixo)*
 }, function(err, impostos) {
     if(err) {
         throw err;
