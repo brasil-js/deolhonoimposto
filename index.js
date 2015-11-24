@@ -14,7 +14,8 @@ module.exports.Cliente = function(opcoes) {
         token: parametros.token || opcoes.token,
         cnpj: parametros.cnpj || opcoes.cnpj,
         uf: parametros.uf || opcoes.uf,
-        codigo: parametros.codigo
+        codigo: parametros.codigo,
+        ex: parametros.ex || '0'
       }
     }, function(err, res, body) {
       if(err) {

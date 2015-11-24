@@ -20,14 +20,31 @@ var cliente = new deolhonoimposto.Cliente({
 
 cliente.consultar({
     tipo: 'servico', // ou 'produto'
-    codigo: '01.05'  // NCM, NBS ou LC116
+    codigo: '01.05',  // NCM, NBS ou LC116
+    ex: 0 // É possível passar parâmetro de exceção (veja abaixo)*
 }, function(err, impostos) {
     if(err) {
         throw err;
     }
 
     console.log(JSON.stringify(impostos, null, 4));
+    /*
+        {
+            "Codigo": "105",
+            "UF": "DF",
+            "Descricao": "Licenciamento ou ...",
+            "Tipo": "NBS",
+            "Nacional": 13.45,
+            "Estadual": 0,
+            "Municipal": 2,
+            "Importado": 15.45
+        }
+    */
 });
 ```
+
+**O parâmetro `ex` é o código da exceção à regra aplicada ao NCM. Este campo é opcional e só faz diferença se informado para o tipo `produto`. Se não for informado é utilizado o valor default `0`. Serve para que um mesmo NCM possa ter mais de uma alíquota de tributação.**
+
+Para mais detalhes técnicos veja [http://iws.ibpt.org.br/Help](http://iws.ibpt.org.br/Help).
 
 ### Licença MIT
