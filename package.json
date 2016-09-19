@@ -1,6 +1,6 @@
 {
   "name": "deolhonoimposto",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Cliente para a API Rest do serviço gratuito DeOlhoNoImposto",
   "main": "index.js",
   "scripts": {
